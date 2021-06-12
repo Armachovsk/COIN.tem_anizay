@@ -1,0 +1,9 @@
+ADF - ARMA Mission Development Framework
+
+Put mission specific scripts in this folder. 
+
+The init.sqf file in this folder is automatically loaded. You can include your own scripts into the init.sqf file.
+
+
+
+ 

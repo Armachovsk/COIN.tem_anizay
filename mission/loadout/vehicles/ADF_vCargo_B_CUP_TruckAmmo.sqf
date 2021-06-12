@@ -1,0 +1,148 @@
+/*********************************************************************************
+ _____ ____  _____ 
+|  _  |    \|   __|
+|     |  |  |   __|
+|__|__|____/|__|   
+ARMA Mission Development Framework
+ADF version: 2.26 / Jul 2020
+
+Script: Vehicle Cargo Script (BLUEFOR) - Ammunition Supply Truck
+Author: Whiztler
+Script version: 2.01
+
+Game type: n/a
+File: ADF_vCargo_B_CUP_TruckAmmo.sqf
+**********************************************************************************
+INSTRUCTIONS:
+
+Paste below line in the INITIALIZATION box of the vehicle:
+null = [this] execVM "mission\loadout\vehicles\ADF_vCargo_B_CUP_TruckAmmo.sqf";
+
+You can comment out (//) lines of ammo you do not want to include
+in the vehicle Cargo. 
+*********************************************************************************/
+
+// Init
+if !isServer exitWith {};
+params ["_v"];
+
+waitUntil {time > 0 && !isNil "ADF_preInit"};
+
+// Settings 
+_v call ADF_fnc_stripVehicle;
+
+// Primary weapon
+_v addWeaponCargoGlobal ["CUP_arifle_M4A3_black", 1]; // R
+_v addWeaponCargoGlobal ["CUP_hgun_M9_snds", 1]; // Side arm
+_v addItemCargoGlobal ["CUP_optic_CompM2_Coyote", 1];
+_v addItemCargoGlobal ["CUP_optic_G33_HWS_COYOTE", 1];
+_v addItemCargoGlobal ["CUP_optic_ACOG", 1];
+_v addItemCargoGlobal ["CUP_optic_ACOG_TA01B_RMR_Coyote", 1];
+_v addItemCargoGlobal ["CUP_muzzle_mfsup_Flashhider_556x45_Black", 2];
+
+// Magazines primary weapon
+_v addMagazineCargoGlobal ["CUP_30Rnd_556x45_Stanag", 250]; // M4
+_v addMagazineCargoGlobal ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249", 25]; // M249
+_v addMagazineCargoGlobal ["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", 25]; // MK48
+_v addMagazineCargoGlobal ["CUP_10Rnd_127x99_M107", 15]; // M107
+_v addMagazineCargoGlobal ["CUP_15Rnd_9x19_M9", 25];// M9 Side arm
+
+// Launchers
+_v addWeaponCargoGlobal ["CUP_launch_M136", 10];
+_v addWeaponCargoGlobal ["CUP_launch_Javelin", 1];
+
+// Missiles
+_v addMagazineCargoGlobal ["CUP_M136_M", 20];
+_v addMagazineCargoGlobal ["CUP_Javelin_M", 5];
+
+// Demo/Explosives
+_v addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 15];
+_v addMagazineCargoGlobal ["SatchelCharge_Remote_Mag", 10];
+_v addMagazineCargoGlobal ["ATMine_Range_Mag", 15];
+_v addMagazineCargoGlobal ["APERSBoundingMine_Range_Mag", 15];
+if ADF_mod_ACE3 then {
+	_v addItemCargoGlobal ["ACE_Clacker", 10];
+	_v addItemCargoGlobal ["ACE_DefusalKit", 5];
+	_v addItemCargoGlobal ["ACE_M26_Clacker", 5]; 
+	_v addItemCargoGlobal ["ACE_wirecutter", 3];
+};	
+
+// GL Ammo
+_v addMagazineCargoGlobal ["CUP_1Rnd_HEDP_M203", 55];
+_v addMagazineCargoGlobal ["CUP_FlareWhite_M203", 25];
+_v addMagazineCargoGlobal ["CUP_1Rnd_SmokeRed_M203", 5];
+if ADF_mod_ACE3 then {
+	_v addItemCargoGlobal ["ACE_HuntIR_M203", 10];
+	_v addItemCargoGlobal ["ACE_HuntIR_monitor", 2];
+};
+
+// Grenades
+_v addMagazineCargoGlobal ["CUP_HandGrenade_M67", 50]; 	 
+_v addMagazineCargoGlobal ["SmokeShellGreen", 50]; 	 
+_v addMagazineCargoGlobal ["SmokeShellRed", 25];
+if ADF_mod_ACE3 then {
+	_v addItemCargoGlobal ["ACE_HandFlare_White", 25];
+	_v addItemCargoGlobal ["ACE_HandFlare_Red", 15];
+	_v addItemCargoGlobal ["ACE_HandFlare_Green", 15];
+	_v addItemCargoGlobal ["ACE_HandFlare_Yellow", 15];
+	_v addItemCargoGlobal ["ACE_M84", 15];
+}; 
+
+// ACRE / TFAR and cTAB
+if ADF_mod_ACRE then {
+	_v addItemCargoGlobal ["ACRE_PRC343", 25];
+	_v addItemCargoGlobal ["ACRE_PRC148", 5];
+};
+if ADF_mod_TFAR then {
+	_v addItemCargoGlobal ["tf_anprc152", 25];
+	//_v addItemCargoGlobal ["tf_rt1523g", 3];
+	_v addBackpackCargoGlobal ["tf_rt1523g", 5];
+};
+if (!ADF_mod_ACRE && !ADF_mod_TFAR) then {_v addItemCargoGlobal ["ItemRadio", 25]};
+if ADF_mod_CTAB then {
+	//_v addItemCargoGlobal ["ItemAndroid", 5];
+	//_v addItemCargoGlobal ["ItemcTab", 1];
+	_v addItemCargoGlobal ["ItemcTabHCam", 25];
+};
+
+// ACE3 Specific	
+if ADF_mod_ACE3 then {
+	_v addItemCargoGlobal ["ACE_EarPlugs", 50];
+	_v addItemCargoGlobal ["ace_mapTools", 10];
+	_v addItemCargoGlobal ["ACE_CableTie", 50];
+	_v addItemCargoGlobal ["ACE_UAVBattery", 5];
+	_v addItemCargoGlobal ["ACE_TacticalLadder_Pack", 3];
+};
+
+// Medical Items
+if ADF_mod_ACE3 then {
+	_v addItemCargoGlobal ["ACE_fieldDressing", 10];
+	_v addItemCargoGlobal ["ACE_personalAidKit", 1];
+	_v addItemCargoGlobal ["ACE_morphine", 5];
+	_v addItemCargoGlobal ["ACE_epinephrine", 5];
+	_v addItemCargoGlobal ["ACE_bloodIV", 2];
+} else {
+	_v addItemCargoGlobal ["FirstAidKit", 10];
+	_v addItemCargoGlobal ["Medikit", 1];
+};
+
+// Optical/Bino's/Goggles
+_v addWeaponCargoGlobal ["CUP_Vector21Nite", 2];
+_v addWeaponCargoGlobal ["Binocular", 10];
+_v addItemCargoGlobal ["G_Tatical_Clear", 5];
+_v addItemCargoGlobal ["G_Shades_Black" , 5];
+_v addItemCargoGlobal ["CFP_ANPVS15_Camo_V2", 10];
+if ADF_mod_ACE3 then {
+	_v addItemCargoGlobal ["ACE_Vector", 5];		
+};
+
+// Gear kit (not working from crates/veh)
+_v addBackpackCargoGlobal ["B_Carryall_Base", 10];
+_v addBackpackCargoGlobal ["B_AssaultPack_blk", 10];
+_v addBackpackCargoGlobal ["B_Kitbag_mcamo", 5];
+
+// Misc items
+_v addItemCargoGlobal ["ItemGPS", 10];
+
+// Misc items
+_v addItemCargoGlobal ["ToolKit", 2];

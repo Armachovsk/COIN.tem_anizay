@@ -1,0 +1,392 @@
+// AO Names v0.83
+call {
+	if (ADF_worldName isEqualTo "RESHMAAN") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [1, 2, 30, 31, 47, 48]};
+			case 1: {selectRandom [0, 1, 2, 22, 30, 31, 47, 48]};
+			case 2: {selectRandom [2, 25, 31, 42, 47, 48]};
+			case 3: {selectRandom [3, 21, 25, 32, 42]};
+			case 4: {selectRandom [4, 14, 24, 34, 14]};
+			case 5: {selectRandom [14, 20, 29, 36, 12]};
+			case 6: {selectRandom [4, 14, 34, 20]};
+			case 7: {selectRandom [12, 15, 17, 35, 36, 38, 40, 43]};
+			case 8: {selectRandom [5, 17, 19, 43]};
+			case 9: {selectRandom [19, 38, 40]};
+			case 10: {selectRandom [6, 7, 19, 44]};
+			case 11: {selectRandom [12, 28, 29, 33, 36]};
+			case 12: {selectRandom [10, 11, 16, 23, 27, 33]};
+			case 13: {selectRandom [9, 10, 16, 26, 37, 39]};
+			case 14: {selectRandom [8, 18, 39]};
+			case 15: {selectRandom [15, 27, 40, 46]};
+			case 16: {selectRandom [11, 41, 49]};
+			case 17: {selectRandom [13, 18, 45, 46]};
+			case 18: {selectRandom [11, 23, 26, 30]};
+			case 19: {selectRandom [50, 51, 52, 53]};
+			case 20: {selectRandom [24, 34, 54, 55]};
+			case 21: {selectRandom [32, 56, 57, 58]};
+			case 22: {selectRandom [29, 32, 33, 59]};
+			case 23: {selectRandom [18, 45, 60]};
+			default {0};
+		};
+	};
+	if (ADF_worldName isEqualTo "TAKISTAN") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [1, 7, 10, 12, 38, 47]};
+			case 1: {selectRandom [26, 27, 28, 48]};
+			case 2: {selectRandom [20, 21, 22, 25]};
+			case 3: {selectRandom [9, 10, 11, 13, 14, 37, 38, 41, 45, 46]};
+			case 4: {selectRandom [2, 3, 4, 5, 6, 7, 12, 39, 40]};
+			case 5: {selectRandom [20, 21]};
+			case 6: {selectRandom [0, 8, 9, 10, 38, 46, 47]};
+			case 7: {selectRandom [3, 5, 6, 39, 40]};
+			case 8: {selectRandom [4, 6, 39, 40]};
+			case 9: {selectRandom [8, 9, 11, 41, 45, 46]};
+			case 10: {selectRandom [22, 23, 24, 25, 26, 28]};
+			case 11: {selectRandom [32, 33, 34, 42]};
+			case 12: {selectRandom [10, 12, 13, 14, 33, 35, 38, 50]};
+			case 13: {selectRandom [17, 30, 31, 33, 35, 36, 50]};
+			case 14: {selectRandom [29, 30, 31, 34, 42, 48]};
+			case 15: {selectRandom [17, 19, 44]};
+			case 16: {selectRandom [15, 16, 17, 18]};
+			case 17: {selectRandom [16, 18, 19, 43]};
+			case 18: {selectRandom [15, 37, 49]};
+			default {0};
+		};
+	};
+	if (ADF_worldName isEqualTo "CLAFGHAN") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 27, 28]};
+			case 1: {selectRandom [2, 4, 5, 6, 7, 8, 9, 10, 30]};	
+			case 2: {selectRandom [2, 3, 4, 7, 8, 9, 10]};	
+			case 3: {selectRandom [6, 11, 12, 30]};	
+			case 4: {selectRandom [11, 12, 13]};	
+			case 5: {selectRandom [13, 14, 15, 16]};	
+			case 6: {selectRandom [15, 16, 22]};	
+			case 7: {selectRandom [15, 17, 19]};	
+			case 8: {selectRandom [18, 19]};	
+			case 9: {selectRandom [17, 19, 20, 25]};	
+			case 10: {selectRandom [20, 21, 24]};	
+			case 11: {selectRandom [23, 26, 29, 42]};	
+			case 12: {selectRandom [22, 26, 29]};	
+			case 13: {selectRandom [32, 43]};	
+			case 14: {selectRandom [31, 32, 33]};	
+			case 15: {selectRandom [34, 36]};	
+			case 16: {selectRandom [35, 36, 41]};	
+			case 17: {selectRandom [37, 38]};	
+			case 18: {selectRandom [38, 39]};	
+			case 19: {selectRandom [40, 41]};
+			default {0};
+		};
+	};
+	if (ADF_worldName isEqualTo "FATA") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 23]};
+			case 1: {selectRandom [1, 7, 8, 9]};
+			case 2: {selectRandom [3, 10, 23]};
+			case 3: {selectRandom [10, 11, 12, 23]};			
+			case 4: {selectRandom [14, 15, 16, 18]};
+			case 5: {selectRandom [2, 4, 5, 18]};
+			case 6: {selectRandom [2, 4, 15, 16, 23]};
+			case 7: {selectRandom [12, 15, 16, 17]};
+			case 8: {selectRandom [19, 20, 21, 22]};
+			case 9: {selectRandom [13, 14, 15, 17]};
+			default {0};
+		};
+	};
+	if (ADF_worldName isEqualTo "TORABORA") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3]};
+			case 1: {selectRandom [1, 4, 5, 6, 7]};
+			case 2: {selectRandom [2, 9, 14, 15]};
+			case 3: {selectRandom [8, 9, 10, 11, 16]};
+			case 4: {selectRandom [12, 13, 16, 17, 18]};
+			case 5: {selectRandom [17, 18, 19, 21, 22]};
+			case 6: {selectRandom [21, 23, 24, 25]};
+			case 7: {selectRandom [11, 19, 21, 26, 27]};
+			default {0};
+		};
+	};
+	if (ADF_worldName isEqualTo "TEM_ANIZAY") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3]};
+			case 1: {selectRandom [4, 5, 6, 7]};
+			case 2: {selectRandom [6, 7, 8, 9]};
+			case 3: {selectRandom [9, 10, 11, 12]};
+			case 4: {selectRandom [11, 12, 13, 14, 15]};
+			case 5: {selectRandom [15, 16, 17, 18]};
+			case 6: {selectRandom [15, 19, 20, 21, 22]};
+			case 7: {selectRandom [18, 21, 23, 24, 25, 26]};
+			case 8: {selectRandom [24, 25, 26, 27, 28]};
+			case 9: {selectRandom [1, 25, 29, 30, 31]};
+			case 10: {selectRandom [20, 21, 22, 32, 33]};
+			case 11: {selectRandom [0, 2, 33, 35, 36, 37]};
+			case 12: {selectRandom [37, 38, 39, 40, 41]};
+			case 13: {selectRandom [39, 40, 41, 42]};
+			case 14: {selectRandom [0, 3, 36, 40, 43]};
+			case 15: {selectRandom [2, 3, 22, 32, 35]};
+			case 16: {selectRandom [7, 8, 36, 44]};
+			default {0};
+		};
+	};
+	if (ADF_worldName isEqualTo "DYA") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5, 6, 7]};
+			case 1: {selectRandom [8, 9, 10, 11, 12, 13]};
+			case 2: {selectRandom [2, 3, 5, 6, 14, 15, 21]};
+			case 3: {selectRandom [16, 17, 18, 19, 20]};
+			case 4: {selectRandom [3, 4, 5, 7, 17, 19, 20, 21]};
+			case 5: {selectRandom [2, 3, 7, 21, 22, 23]};
+			case 6: {selectRandom [1, 2, 23, 24, 5, 26, 27]};
+			case 7: {selectRandom [26, 28, 29, 30, 31]};
+			default {0};
+		};
+	};
+	if (ADF_worldName isEqualTo "MCN_ALIABAD") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 19, 20, 21]};
+			case 1: {selectRandom [13, 14, 15, 16, 17, 18, 19, 20]};
+			case 2: {selectRandom [1, 2, 3, 4, 5, 6, 7, 21]};
+			case 3: {selectRandom [4, 5, 6, 7, 8, 9, 10]};
+			case 4: {selectRandom [8, 9, 10, 11, 12, 13, 14, 15]};
+			case 5: {selectRandom [0, 1, 19, 20, 21]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "TEM_KUJARI") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5, 6, 7, 12]};
+			case 1: {selectRandom [8, 9, 10, 11, 12, 13]};
+			case 2: {selectRandom [14, 15, 16, 17, 18, 19, 20]};
+			case 3: {selectRandom [16, 17, 21, 22, 23]};
+			case 4: {selectRandom [23, 24, 25, 26, 27]};
+			case 5: {selectRandom [17, 20, 21, 23, 28, 29, 30]};
+			case 6: {selectRandom [27, 28, 30, 31, 32]};
+			case 7: {selectRandom [11, 13, 18, 33, 34, 35, 36]};
+			case 8: {selectRandom [0, 37, 38, 39, 40, 41, 42]};
+			case 9: {selectRandom [43, 44, 45, 46, 47, 48, 61]};
+			case 10: {selectRandom [49, 50, 51, 52]};
+			case 11: {selectRandom [53, 54, 55, 56, 57]};
+			case 12: {selectRandom [47, 48, 58, 59, 60, 61]};
+			case 13: {selectRandom [62, 63, 64, 65, 66]};
+			case 14: {selectRandom [64, 65, 68, 69, 70, 71]};
+			case 15: {selectRandom [69, 71, 72, 73, 74]};
+			case 16: {selectRandom [75, 76, 77, 78, 79, 80]};
+			case 17: {selectRandom [80, 81, 82, 83, 84, 85]};
+			case 18: {selectRandom [81, 82, 86, 87, 88, 89]};
+			case 19: {selectRandom [89, 90, 91, 92, 93, 94]};
+			case 20: {selectRandom [93, 94, 95, 96, 97]};
+			case 21: {selectRandom [90, 98, 99, 100, 101]};
+			case 22: {selectRandom [99, 101, 102, 103, 104]};
+			case 23: {selectRandom [99, 102, 103, 104, 105]};
+			case 24: {selectRandom [106, 107, 108, 109, 110]};
+			case 25: {selectRandom [105, 111, 112, 113]};
+			case 26: {selectRandom [18, 19, 36, 102, 114, 115]};
+			case 27: {selectRandom [101, 103, 115, 116, 117, 118]};
+			case 28: {selectRandom [100, 101, 115, 117, 119]};
+			case 29: {selectRandom [100, 120, 121, 122]};
+			case 30: {selectRandom [29, 30, 32, 123, 124]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "PJA307") exitWith { 
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5]};
+			case 1: {selectRandom [1, 6, 7, 8, 9]};
+			case 2: {selectRandom [10, 11, 12]};
+			case 3: {selectRandom [13, 14, 15, 16]};
+			case 4: {selectRandom [17, 18, 19, 20]};
+			case 5: {selectRandom [21, 22, 23, 24]};
+			case 6: {selectRandom [25, 26, 27, 28]};
+			case 7: {selectRandom [27, 28, 29, 30, 31, 32, 33]};
+			case 8: {selectRandom [32, 34, 35, 36, 37]};
+			case 9: {selectRandom [37, 38, 39, 40]};
+			case 10: {selectRandom [41, 42, 43, 44, 45]};
+			case 11: {selectRandom [42, 45, 46, 47, 64]};
+			case 12: {selectRandom [45, 48, 49, 50, 51]};
+			case 13: {selectRandom [47, 50, 51, 52, 53]};
+			case 14: {selectRandom [44, 48, 49, 54, 55]};
+			case 15: {selectRandom [56, 57, 58, 59]};
+			case 16: {selectRandom [59, 60, 61, 62]};
+			case 17: {selectRandom [57, 60, 62, 63, 64]};
+			case 18: {selectRandom [46, 63, 64, 65, 66, 67]};
+			case 19: {selectRandom [68, 69, 70, 71, 72]};
+			case 20: {selectRandom [30, 31, 66, 67, 73]};
+			case 21: {selectRandom [66, 73, 74, 75, 76]};
+			case 22: {selectRandom [76, 77, 78, 79, 80]};
+			case 23: {selectRandom [53, 81, 82, 83]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "SWU_PUBLIC_SALMAN_MAP") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]};
+			case 1: {selectRandom [11, 12, 13, 14, 15]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "ZARGABAD") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5, 6, 7, 19, 20]};
+			case 1: {selectRandom [0, 2, 7, 8, 9, 10, 11]};
+			case 2: {selectRandom [2, 3, 9, 12, 13, 14]};
+			case 3: {selectRandom [4, 15, 16, 17, 18, 19, 20]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "SARALITE") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3]};
+			case 1: {selectRandom [2, 4, 5, 9]};
+			case 2: {selectRandom [5, 6, 7, 8, 9]};
+			case 3: {selectRandom [7, 8, 10, 11, 12]};
+			case 4: {selectRandom [11, 12, 13, 14]};
+			case 5: {selectRandom [13, 14, 15, 16]};
+			case 6: {selectRandom [12, 13, 16, 17]};
+			case 7: {selectRandom [18, 19, 20]};
+			case 8: {selectRandom [19, 21, 22, 23, 24]};
+			case 9: {selectRandom [19, 25, 26, 27, 28]};
+			case 10: {selectRandom [0, 23, 24, 26, 27]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "LYTHIUM") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5, 6, 7, 8]};
+			case 1: {selectRandom [9, 10, 11, 12, 13, 14, 23, 25, 26]};
+			case 2: {selectRandom [15, 16, 17, 18, 19]};
+			case 3: {selectRandom [14, 15, 19, 20, 21, 22, 23, 24, 25]};
+			case 4: {selectRandom [14, 23, 26, 27, 28, 29]};
+			case 5: {selectRandom [14, 29, 30, 31, 32]};
+			case 6: {selectRandom [9, 32, 33, 34, 35]};
+			case 7: {selectRandom [36, 37, 38, 39]};
+			case 8: {selectRandom [36, 40, 41, 42]};
+			case 9: {selectRandom [13, 15, 16, 17, 22, 25, 43, 44, 45, 46]};
+			case 10: {selectRandom [44, 47, 48, 49, 50]};
+			case 11: {selectRandom [7, 8, 51, 52, 53, 54]};
+			case 12: {selectRandom [6, 55, 56, 57, 58]};
+			case 13: {selectRandom [1, 8, 51, 59, 60]};
+			case 14: {selectRandom [56, 61, 62, 63, 64]};
+			case 15: {selectRandom [62, 65, 66, 67]};
+			case 16: {selectRandom [65, 66, 68, 69]};
+			case 17: {selectRandom [69, 70, 71, 72]};
+			case 18: {selectRandom [70, 72, 73, 74, 75]};
+			case 19: {selectRandom [73, 74, 76, 77, 78, 79]};
+			case 20: {selectRandom [74, 75, 80, 81, 82, 83, 84]};
+			case 21: {selectRandom [80, 83, 85, 86, 87, 88, 89]};
+			case 22: {selectRandom [12, 13, 45, 46, 88, 89, 90, 91, 92]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "PJA310") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4]};			
+			case 1: {selectRandom [5, 6, 7, 8, 9, 84]};
+			case 2: {selectRandom [21, 22, 23, 24, 25]};
+			case 3: {selectRandom [10, 11, 12, 13, 14, 15]};
+			case 4: {selectRandom [16, 17, 18, 19, 20]};
+			case 5: {selectRandom [26, 27, 28, 29, 30]};
+			case 6: {selectRandom [31, 32, 33, 34, 35]};
+			case 7: {selectRandom [33, 34, 35, 36, 37]};
+			case 8: {selectRandom [38, 39, 40, 41, 42, 63]};
+			case 9: {selectRandom [31, 32, 43, 44, 45, 46, 47]};
+			case 10: {selectRandom [48, 49, 50, 51]};
+			case 11: {selectRandom [45, 46, 50, 52, 53]};
+			case 12: {selectRandom [31, 34, 54, 55, 56]};
+			case 13: {selectRandom [57, 58, 59, 60]};
+			case 14: {selectRandom [31, 32, 43, 61]};
+			case 15: {selectRandom [60, 62, 63]};
+			case 16: {selectRandom [66, 67, 69, 70]};
+			case 17: {selectRandom [64, 65, 66, 67, 68]};
+			case 18: {selectRandom [67, 68, 71, 72]};
+			case 19: {selectRandom [68, 71, 73, 74, 75, 76]};
+			case 20: {selectRandom [71, 73, 75, 76, 77]};
+			case 21: {selectRandom [73, 74, 75, 78, 79]};
+			case 22: {selectRandom [3, 78, 79, 80]};
+			case 23: {selectRandom [2, 81, 82, 83]};
+			case 24: {selectRandom [9, 84, 85, 86, 87]};
+			case 25: {selectRandom [6, 86, 87, 88, 89]};
+			case 26: {selectRandom [6, 89, 90, 91, 92]};
+			case 27: {selectRandom [8, 24, 93, 94]};
+			case 28: {selectRandom [95, 96, 97, 98, 99]};
+			case 29: {selectRandom [96, 97, 100, 101]};
+			case 30: {selectRandom [94, 101, 102, 103]};
+			case 31: {selectRandom [99, 104, 105, 106]};
+			case 32: {selectRandom [10, 11, 98, 99, 105, 107]};
+			case 33: {selectRandom [12, 14, 108, 109, 110, 111]};
+			case 34: {selectRandom [14, 108, 111, 112]};
+			case 35: {selectRandom [15, 16, 17, 113, 114]};
+			case 36: {selectRandom [57, 58, 59, 115, 116, 117]};
+			case 37: {selectRandom [57, 58, 59, 115, 116, 117]};
+			case 38: {selectRandom [57, 58, 59, 115, 116, 117]};
+			case 39: {selectRandom [118, 119, 120, 122, 123]};
+			case 40: {selectRandom [52, 122, 124]};
+			case 41: {selectRandom [26, 27, 29, 30]};
+			case 42: {selectRandom [57, 58, 59, 115, 116]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "FARKHAR") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5]};
+			case 1: {selectRandom [10, 12, 13, 14]};
+			case 2: {selectRandom [5, 6, 7, 8, 9, 15, 16]};
+			case 3: {selectRandom [2, 3, 4, 5, 6, 7]};
+			case 4: {selectRandom [10, 17, 18, 20, 21]};
+			case 5: {selectRandom [10, 15, 16, 17, 20]};
+			case 6: {selectRandom [17, 18, 21, 22, 23, 24]};
+			case 7: {selectRandom [22, 23, 24, 25, 26, 27, 28, 30]};
+			case 8: {selectRandom [22, 23, 24, 25, 26, 30]};
+			case 9: {selectRandom [31, 37]};
+			case 10: {selectRandom [32, 33, 34, 35, 36, 40]};
+			case 11: {selectRandom [38, 39]};
+			case 12: {selectRandom [25, 26, 27, 28, 30]};
+			case 13: {selectRandom [26, 27, 28, 29, 30]};
+			case 14: {selectRandom [22, 32, 33]};
+			case 15: {selectRandom [34, 35, 39, 40]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "DINGOR") exitWith {
+		_fobNumber = switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 5]};
+			case 1: {selectRandom [6, 7, 8, 9, 10, 11, 48]};
+			case 2: {selectRandom [2, 3, 4, 12, 13]};
+			case 3: {selectRandom [13, 14, 15, 16, 17]};
+			case 4: {selectRandom [10, 11, 18, 19, 20]};
+			case 5: {selectRandom [17, 21, 22, 23, 24]};
+			case 6: {selectRandom [4, 23, 24, 25, 26]};
+			case 7: {selectRandom [24, 25, 26, 27, 28]};
+			case 8: {selectRandom [27, 28, 29, 30]};
+			case 9: {selectRandom [29, 30, 31, 32]};
+			case 10: {selectRandom [33, 34, 35]};
+			case 11: {selectRandom [33, 34, 35]};
+			case 12: {selectRandom [24, 36, 37, 38, 39, 40]};
+			case 13: {selectRandom [17, 22, 41, 42, 43, 45]};
+			case 14: {selectRandom [16, 17, 22, 44, 45]};
+			case 15: {selectRandom [6, 7, 8, 46, 47, 48, 49]};
+			case 16: {selectRandom [49, 50]};
+			case 17: {selectRandom [0, 1, 51]};
+			case 18: {selectRandom [6, 12, 48, 50]};
+			case 19: {selectRandom [7, 15, 16, 44, 2]};
+			case 20: {selectRandom [7, 10, 11, 44, 53]};
+			case 21: {selectRandom [23, 24, 37, 38, 39, 55]};
+			default {0};
+		};
+	};
+	if (ADF_WorldName isEqualTo "CHONGO") exitWith {
+		switch _ao_number do {
+			case 0: {selectRandom [0, 1, 2, 3, 4, 10]};
+			case 1: {selectRandom [5, 6, 7, 8, 9, 10]};
+			case 2: {selectRandom [4, 11, 12, 13, 14]};
+			case 3: {selectRandom [13, 15, 16, 17]};
+			case 4: {selectRandom [7, 8, 18, 19, 20, 35]};
+			case 5: {selectRandom [21, 22, 23, 24, 25, 32]};
+			case 6: {selectRandom [26, 27, 28, 29, 30]};
+			case 7: {selectRandom [20, 21, 31, 32, 33]};
+			case 8: {selectRandom [33, 20, 22, 34, 35]};
+			case 9: {selectRandom [36, 37, 38, 39]};
+			case 10: {selectRandom [6, 7, 18, 19, 29]};
+			default {0};
+		};
+	};
+};

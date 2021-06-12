@@ -1,0 +1,391 @@
+// AO Names v0.83
+call {
+	if (ADF_worldName isEqualTo "RESHMAAN") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Bahijah Airport"; _ao_base = true};
+			case 1: {_ao_name = "Bahijah City"; _ao_base = true};
+			case 2: {_ao_name = "Jalilah"};
+			case 3: {_ao_name = "Zaleekah District"};
+			case 4: {_ao_name = "Sa Diyah District"};
+			case 5: {_ao_name = "Kezban"};
+			case 6: {_ao_name = "Faaria"};
+			case 7: {_ao_name = "I'timad District"; _ao_base = true};
+			case 8: {_ao_name = "Durrishahwar"};
+			case 9: {_ao_name = "Jabirah"};
+			case 10: {_ao_name = "Ghufran Airbase"; _ao_base = true};
+			case 11: {_ao_name = "Kifah"};
+			case 12: {_ao_name = "Dilshad District"; _ao_base = true};
+			case 13: {_ao_name = "Afaf District"; _ao_base = true};
+			case 14: {_ao_name = "Kallista"};
+			case 15: {_ao_name = "Wahbiyah District"; _ao_base = true};
+			case 16: {_ao_name = "Ghazal"};
+			case 17: {_ao_name = "Dimah District"};
+			case 18: {_ao_name = "Elmas"};
+			case 19: {_ao_name = "Wadi'ah"};
+			case 20: {_ao_name = "Hadassah"};
+			case 21: {_ao_name = "Rafi'ah"};
+			case 22: {_ao_name = "bushra"};
+			case 23: {_ao_name = "Farhannah"};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_worldName isEqualTo "TAKISTAN") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Rasman District"; _ao_base = true};
+			case 1: {_ao_name = "Chardarakht"};
+			case 2: {_ao_name = "Chak Chak"};
+			case 3: {_ao_name = "Nagara District"};
+			case 4: {_ao_name = "Zavarak District"};
+			case 5: {_ao_name = "Landay"};
+			case 6: {_ao_name = "Shamali"};
+			case 7: {_ao_name = "Karachinar"};
+			case 8: {_ao_name = "Ravanay"};
+			case 9: {_ao_name = "Nur"};
+			case 10: {_ao_name = "Loy Manara District"; _ao_base = true};
+			case 11: {_ao_name = "Garmsar"; _ao_base = true};
+			case 12: {_ao_name = "Bastam District"};
+			case 13: {_ao_name = "Feruz Abad District"; _ao_base = true};
+			case 14: {_ao_name = "Timurkalay"};
+			case 15: {_ao_name = "Shake District"};
+			case 16: {_ao_name = "Khushab"};
+			case 17: {_ao_name = "Shukurkalay District"};
+			case 18: {_ao_name = "Mulladost"};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_worldName isEqualTo "CLAFGHAN") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Prozakar District"; _ao_base = true};
+			case 1: {_ao_name = "Mini Al Malak";};
+			case 2: {_ao_name = "Lotohafaz";};
+			case 3: {_ao_name = "Kepsora"; _ao_base = true;};
+			case 4: {_ao_name = "Ovallestan";};
+			case 5: {_ao_name = "Yanotabir District";};
+			case 6: {_ao_name = "Gonzalabad";};
+			case 7: {_ao_name = "Demenazhir";};
+			case 8: {_ao_name = "Guyosabir";};
+			case 9: {_ao_name = "Fareldraguz";};
+			case 10: {_ao_name = "Al Jebel"; _ao_base = true;};
+			case 11: {_ao_name = "Hysad";};
+			case 12: {_ao_name = "Etnikora";};
+			case 13: {_ao_name = "Al Riyal";};
+			case 14: {_ao_name = "Marmakur";};
+			case 15: {_ao_name = "Kenykmheni";};
+			case 16: {_ao_name = "Mandingara";};
+			case 17: {_ao_name = "Lolosalam";};
+			case 18: {_ao_name = "Spetzyahir"; _ao_base = true;};
+			case 19: {_ao_name = "Machifazar"; _ao_base = true;};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_worldName isEqualTo "FATA") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Tottah";};
+			case 1: {_ao_name = "Kabashir Base"; _ao_base = true;};
+			case 2: {_ao_name = "Goram";};
+			case 3: {_ao_name = "Sirika";};
+			case 4: {_ao_name = "Bahad";};
+			case 5: {_ao_name = "Abadaez";};
+			case 6: {_ao_name = "Hama District";};
+			case 7: {_ao_name = "Sirak";};
+			case 8: {_ao_name = "Al Bahad District";};
+			case 9: {_ao_name = "Mariyah Base"; _ao_base = true;};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_worldName isEqualTo "TORABORA") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Bar Kanday";};
+			case 1: {_ao_name = "Skandarhar";};
+			case 2: {_ao_name = "Wanat";};
+			case 3: {_ao_name = "Sanaag Bari";};
+			case 4: {_ao_name = "Gharunta";};
+			case 5: {_ao_name = "Jool Hul";};
+			case 6: {_ao_name = "Jalgharbar";};
+			case 7: {_ao_name = "Yak Ghar";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_worldName isEqualTo "TEM_ANIZAY") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Anizay";};
+			case 1: {_ao_name = "Akhund"; _ao_base = true;};
+			case 2: {_ao_name = "Qalandar";};
+			case 3: {_ao_name = "Gorqan";};
+			case 4: {_ao_name = "Mian";};
+			case 5: {_ao_name = "Naudeh"; _ao_base = true;};
+			case 6: {_ao_name = "Maku District"; _ao_base = true;};
+			case 7: {_ao_name = "Landay"; _ao_base = true;};
+			case 8: {_ao_name = "Herati"; _ao_base = true;};
+			case 9: {_ao_name = "Tebbi";};
+			case 10: {_ao_name = "Zaranj";};
+			case 11: {_ao_name = "Khas";};
+			case 12: {_ao_name = "Mahajerin District"; _ao_base = true;};
+			case 13: {_ao_name = "Rangrezan District"; _ao_base = true;};
+			case 14: {_ao_name = "Seyyedan";};
+			case 15: {_ao_name = "Musakhan";};
+			case 16: {_ao_name = "Makan Aljamal";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_worldName isEqualTo "DYA") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Kahn Bani Saad"; _ao_base = true;};
+			case 1: {_ao_name = "FOB Ishaqi"; _ao_base = true;};
+			case 2: {_ao_name = "Al Ubaidy";};
+			case 3: {_ao_name = "Alsamoud Industrial Facility"; _ao_base = true;};
+			case 4: {_ao_name = "Al Zaraa";};
+			case 5: {_ao_name = "Rasheed";};
+			case 6: {_ao_name = "Al Baiueia District"; _ao_base = true;};
+			case 7: {_ao_name = "Zawiyah District";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_worldName isEqualTo "MCN_ALIABAD") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Abad";};
+			case 1: {_ao_name = "Wolak";};
+			case 2: {_ao_name = "Ahmad Golam";};
+			case 3: {_ao_name = "Narmaki";};
+			case 4: {_ao_name = "Hadiz";};
+			case 5: {_ao_name = "Katal";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "TEM_KUJARI") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Marwey District"; _ao_base = true;};
+			case 2: {_ao_name = "Wondori";};
+			case 3: {_ao_name = "Mourimadi";};
+			case 4: {_ao_name = "Biri Boula";};
+			case 5: {_ao_name = "Biri Noula";};
+			case 6: {_ao_name = "Bora";};
+			case 7: {_ao_name = "Damaram";};
+			case 8: {_ao_name = "Walada";};
+			case 9: {_ao_name = "Geydam-Tchoukou";};
+			case 10: {_ao_name = "Masakali";};
+			case 11: {_ao_name = "Gadjadji Lawan";};
+			case 12: {_ao_name = "Barawas";};
+			case 13: {_ao_name = "Balama Kurdi";};
+			case 14: {_ao_name = "Kyari Kinnai";};
+			case 15: {_ao_name = "Yusufari District";};
+			case 16: {_ao_name = "Kura";};
+			case 17: {_ao_name = "Danashiwa";};
+			case 18: {_ao_name = "Maiwa District";};
+			case 19: {_ao_name = "Gouara";};
+			case 20: {_ao_name = "Afofo District";};
+			case 21: {_ao_name = "Lawan Aridi";};
+			case 22: {_ao_name = "Salmari";};
+			case 23: {_ao_name = "Samari";};
+			case 24: {_ao_name = "Mandalari";};
+			case 25: {_ao_name = "Kouble Maimatara";};
+			case 26: {_ao_name = "Mimi District";};
+			case 27: {_ao_name = "Kawiya Moustapha";};
+			case 28: {_ao_name = "Ari Boudoumiri District";};
+			case 29: {_ao_name = "Madairi";};
+			case 30: {_ao_name = "Kawiya Boukar Souri District";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "PJA307") exitWith { 
+		switch _ao_number do {
+			case 0: {_ao_name = "Al Minsah";};
+			case 1: {_ao_name = "Jiblah";};
+			case 2: {_ao_name = "Dhamar";};
+			case 3: {_ao_name = "Dhamar Industries"; _ao_base = true;};
+			case 4: {_ao_name = "Zone 47"; _ao_base = true;};
+			case 5: {_ao_name = "Dehiba";};
+			case 6: {_ao_name = "Kalaat";};
+			case 7: {_ao_name = "Ben Guerrir District"; _ao_base = true;};
+			case 8: {_ao_name = "Waddan";};
+			case 9: {_ao_name = "Mizzdah";};
+			case 10: {_ao_name = "Fan El Hisn District"; _ao_base = true;};
+			case 11: {_ao_name = "Tidjikja Oil Works"; _ao_base = true;};
+			case 12: {_ao_name = "Tidjikja Airbase"; _ao_base = true;};
+			case 13: {_ao_name = "Tidjikja"; _ao_base = true;};
+			case 14: {_ao_name = "El Hisn Platform"; _ao_base = true;};
+			case 15: {_ao_name = "Mal";};
+			case 16: {_ao_name = "Haere Lao";};
+			case 17: {_ao_name = "Akka"; _ao_base = true;};
+			case 18: {_ao_name = "Ghrisss District"; _ao_base = true;};
+			case 19: {_ao_name = "Schnell Oil Site Nr 7"; _ao_base = true;};
+			case 20: {_ao_name = "Oum Ali";};
+			case 21: {_ao_name = "Bir Al Huffay"; _ao_base = true;};
+			case 22: {_ao_name = "Tlidjen";};
+			case 23: {_ao_name = "Diminli"; _ao_base = true;};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "SWU_PUBLIC_SALMAN_MAP") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Al Salman"; _ao_base = true};
+			case 1: {_ao_name = "Al Salman Airbase"; _ao_base = true};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "ZARGABAD") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Zargabad"; _ao_base = true;};
+			case 1: {_ao_name = "Hazar Bagh district"; _ao_base = true;};
+			case 2: {_ao_name = "Nango District"; _ao_base = true;};
+			case 3: {_ao_name = "Shahbaz District"; _ao_base = true;};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "SARALITE") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Paraiso"; _ao_base = true;};
+			case 1: {_ao_name = "Corazol"; _ao_base = true;};
+			case 2: {_ao_name = "Ortego District";};
+			case 3: {_ao_name = "Dolores"; _ao_base = true;};
+			case 4: {_ao_name = "Iguana";};
+			case 5: {_ao_name = "Tiberia";};
+			case 6: {_ao_name = "Cayo"; _ao_base = true;};
+			case 7: {_ao_name = "Arcadia";};
+			case 8: {_ao_name = "Estrella";};
+			case 9: {_ao_name = "Somato District";};
+			case 10: {_ao_name = "Chantico District";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "LYTHIUM") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "KalaeNoowi District"; _ao_base = true;};
+			case 1: {_ao_name = "Kinduf District"; _ao_base = true;};
+			case 2: {_ao_name = "Keruk District";};
+			case 3: {_ao_name = "Offar District"; _ao_base = true;};
+			case 4: {_ao_name = "Kinduf Factory"; _ao_base = true;};
+			case 5: {_ao_name = "Bagdir";};
+			case 6: {_ao_name = "Zagun";};
+			case 7: {_ao_name = "Benamair";};
+			case 8: {_ao_name = "Amir";};
+			case 9: {_ao_name = "Arobster District"; _ao_base = true;};
+			case 10: {_ao_name = "Razbula";};
+			case 11: {_ao_name = "Zarath";};
+			case 12: {_ao_name = "Kandar";};
+			case 13: {_ao_name = "Kamir";};
+			case 14: {_ao_name = "Nefer District"; _ao_base = true;};
+			case 15: {_ao_name = "Limar";};
+			case 16: {_ao_name = "Mayankel";};
+			case 17: {_ao_name = "Karift";};
+			case 18: {_ao_name = "Zhapir";};
+			case 19: {_ao_name = "Mafaraz";};
+			case 20: {_ao_name = "Kunura";};
+			case 21: {_ao_name = "Limari District";};
+			case 22: {_ao_name = "Orcarif District";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "PJA310") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Al Safyrah District"; _ao_base = true;};
+			case 1: {_ao_name = "Jableh"; _ao_base = true;};
+			case 2: {_ao_name = "Dayr Hafir"; _ao_base = true;};
+			case 3: {_ao_name = "Al Tabqah"; _ao_base = true;};
+			case 4: {_ao_name = "Al Quisa"; _ao_base = true;};
+			case 5: {_ao_name = "Al Nabq"; _ao_base = true;};
+			case 6: {_ao_name = "Incirkli";};
+			case 7: {_ao_name = "Incirkli Base"; _ao_base = true;};
+			case 8: {_ao_name = "Ma'Arat"; _ao_base = true;};
+			case 9: {_ao_name = "Tel Segheb District";};
+			case 10: {_ao_name = "Taizzah";};
+			case 11: {_ao_name = "Salquin District";};
+			case 12: {_ao_name = "Al Kuna";};
+			case 13: {_ao_name = "Karsu";};
+			case 14: {_ao_name = "Incirkli Plant"; _ao_base = true;};
+			case 15: {_ao_name = "Batiyah";};
+			case 16: {_ao_name = "Al Hwayz";};
+			case 17: {_ao_name = "Siano";};
+			case 18: {_ao_name = "Nobol";};
+			case 19: {_ao_name = "Quardallah";};
+			case 20: {_ao_name = "Saloren";};
+			case 21: {_ao_name = "Al Haffah";};
+			case 22: {_ao_name = "Al Safyrah Refinery"; _ao_base = true;};
+			case 23: {_ao_name = "Sanobar Refinery"; _ao_base = true;};
+			case 24: {_ao_name = "Ghalam";};
+			case 25: {_ao_name = "Al Samouk";};
+			case 26: {_ao_name = "Rash Kbar";};
+			case 27: {_ao_name = "Zaaraya";};
+			case 28: {_ao_name = "Al Nozha"; _ao_base = true;};
+			case 29: {_ao_name = "Sha'lrat";};
+			case 30: {_ao_name = "Hmarat";};
+			case 31: {_ao_name = "Al Furqus";};
+			case 32: {_ao_name = "Al Manzoul";};
+			case 33: {_ao_name = "Al Vegh"; _ao_base = true;};
+			case 34: {_ao_name = "Oiytah"; _ao_base = true;};
+			case 35: {_ao_name = "Kafr Salam"; _ao_base = true;};
+			case 36: {_ao_name = "Qunaya";};
+			case 37: {_ao_name = "Mydliah";};
+			case 38: {_ao_name = "Al Fuah";};
+			case 39: {_ao_name = "Elborah District";};
+			case 40: {_ao_name = "Mansoura";};
+			case 41: {_ao_name = "Al Dana";};
+			case 42: {_ao_name = "Armanaz District";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "FARKHAR") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Sheykheh"; _ao_base = true;};
+			case 1: {_ao_name = "Zor-Kalata";};
+			case 2: {_ao_name = "Shaadi"; _ao_base = true;};
+			case 3: {_ao_name = "Mata";};
+			case 4: {_ao_name = "Kot Sobharo";};
+			case 5: {_ao_name = "Tawarah";};
+			case 6: {_ao_name = "Khanabad";};
+			case 7: {_ao_name = "Kofilata";};
+			case 8: {_ao_name = "Chavuna District";};
+			case 9: {_ao_name = "FOB Denver"; _ao_base = true;};
+			case 10: {_ao_name = "Deval District";};
+			case 11: {_ao_name = "Buvarazam";};
+			case 12: {_ao_name = "Mapfer";};
+			case 13: {_ao_name = "Al-Pukahr";};
+			case 14: {_ao_name = "Observation Point"; _ao_base = true;};
+			case 15: {_ao_name = "Kala Yusufi"; _ao_base = true;};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};	
+	};
+	if (ADF_WorldName isEqualTo "DINGOR") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Maruko"; _ao_base = true;};
+			case 1: {_ao_name = "Calamar"; _ao_base = true;};
+			case 2: {_ao_name = "Corazon"; _ao_base = true;};
+			case 3: {_ao_name = "San Arulco District";};
+			case 4: {_ao_name = "Drassen District";};
+			case 5: {_ao_name = "Fernando District";};
+			case 6: {_ao_name = "Guayucca District";};
+			case 7: {_ao_name = "San Isabel";};
+			case 8: {_ao_name = "Gatoro";};
+			case 9: {_ao_name = "Medicolin";};
+			case 10: {_ao_name = "Arapesca";};
+			case 11: {_ao_name = "Zanjeer";};
+			case 12: {_ao_name = "Prison District"; _ao_base = true;};
+			case 13: {_ao_name = "Benio District";};
+			case 14: {_ao_name = "Los Peligron";};
+			case 15: {_ao_name = "Monga District"; _ao_base = true;};
+			case 16: {_ao_name = "Fantasmo"; _ao_base = true;};
+			case 17: {_ao_name = "Conoteta District"; _ao_base = true;};
+			case 18: {_ao_name = "Victorin";};
+			case 19: {_ao_name = "Faunaverde";};
+			case 20: {_ao_name = "Montehofo";};
+			case 21: {_ao_name = "Haciendos Base"; _ao_base = true;};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};
+	};
+	if (ADF_WorldName isEqualTo "CHONGO") exitWith {
+		switch _ao_number do {
+			case 0: {_ao_name = "Chongo"; _ao_base = true;};
+			case 1: {_ao_name = "Obupala District";};
+			case 2: {_ao_name = "Kabonbi";};
+			case 3: {_ao_name = "Akomo";};
+			case 4: {_ao_name = "Elsaville";};
+			case 5: {_ao_name = "Swagga"; _ao_base = true;};
+			case 6: {_ao_name = "Rafada";};
+			case 7: {_ao_name = "Rangolan";};
+			case 8: {_ao_name = "Komaria";};
+			case 9: {_ao_name = "Cruzar";};
+			case 10: {_ao_name = "Kasembuka District";};
+			default {_ao_name = "Unknown Opfor Occupied Area"};
+		};
+	};
+};
